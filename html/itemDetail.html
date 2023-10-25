@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="itemDetail.css">
-    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="../css/itemDetail.css">
+    <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,100&family=Shadows+Into+Light&display=swap"
           rel="stylesheet">
-    <script src="scripts/global.js"></script>
+    <script src="../scripts/global.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
             integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
             crossorigin="anonymous"></script>
@@ -24,26 +24,30 @@
     <title>Detail</title>
 </head>
 <body>
-
 <nav>
     <div class="nav-buttons">
-        <img id="menu-image" src="icons/menu.svg" class="image pointer open-menu-btn" alt="" parameter="menu-sidebar">
+        <img id="menu-image" src="../icons/menu.svg" class="image pointer open-menu-btn" alt="" parameter="menu-sidebar">
         <div class="menu-buttons">
             <h4 class="navigation-link"><a href="prehladPage.html">Prehľad</a></h4>
             <h4 class="navigation-link"><a href="filmyPage.html">Filmy</a></h4>
             <h4 class="navigation-link"><a href="serialyPage.html">Seriály</a></h4>
         </div>
         <h1 class="page-title primary-color pointer">Filmuj</h1>
+        <img id="user-image" src="../icons/user.png" class="image pointer open-menu-btn" alt="" parameter="login-sidebar">
     </div>
-    <div id="menu-sidebar" class="sidebar">
+    <div id="menu-sidebar" class="sidebar left">
         <h4 class="navigation-link"><a href="prehladPage.html">Prehľad</a></h4>
         <h4 class="navigation-link"><a href="filmyPage.html">Filmy</a></h4>
         <h4 class="navigation-link"><a href="serialyPage.html">Seriály</a></h4>
     </div>
+    <div id="login-sidebar" class="sidebar right">
+        <h4 class="navigation-link"><a href="loginPage.html">Prihlásiť sa</a></h4>
+        <h4 class="navigation-link"><a href="registerPage.html">Registrovať sa</a></h4>
+    </div>
 </nav>
 <div class="card-content">
     <div class="detail-wrapper">
-        <img class="detail-image" src="images/65-film.jpeg" alt="65">
+        <img class="detail-image" src="../images/65-film.jpeg" alt="65">
         <div class="horizontal-divider">&nbsp;</div>
         <div>
             <h4 class="primary-color">Základne informácie:</h4>

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="global.css">
+  <link rel="stylesheet" href="../css/global.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,100&family=Shadows+Into+Light&display=swap"
         rel="stylesheet">
-  <script src="scripts/global.js"></script>
+  <script src="../scripts/global.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
           integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
           crossorigin="anonymous"></script>
@@ -20,36 +20,41 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
           integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
           crossorigin="anonymous"></script>
-  <title>Serialy</title>
+  <title>Filmy</title>
 </head>
 <body>
 <nav>
   <div class="nav-buttons">
-    <img id="menu-image" src="icons/menu.svg" class="image pointer open-menu-btn" alt="" parameter="menu-sidebar">
+    <img id="menu-image" src="../icons/menu.svg" class="image pointer open-menu-btn" alt="" parameter="menu-sidebar">
     <div class="menu-buttons">
       <h4 class="navigation-link"><a href="prehladPage.html">Prehľad</a></h4>
       <h4 class="navigation-link"><a href="filmyPage.html">Filmy</a></h4>
       <h4 class="navigation-link"><a href="serialyPage.html">Seriály</a></h4>
     </div>
     <h1 class="page-title primary-color pointer">Filmuj</h1>
+    <img id="user-image" src="../icons/user.png" class="image pointer open-menu-btn" alt="" parameter="login-sidebar">
   </div>
-  <div id="menu-sidebar" class="sidebar">
+  <div id="menu-sidebar" class="sidebar left">
     <h4 class="navigation-link"><a href="prehladPage.html">Prehľad</a></h4>
     <h4 class="navigation-link"><a href="filmyPage.html">Filmy</a></h4>
     <h4 class="navigation-link"><a href="serialyPage.html">Seriály</a></h4>
+  </div>
+  <div id="login-sidebar" class="sidebar right">
+    <h4 class="navigation-link"><a href="loginPage.html">Prihlásiť sa</a></h4>
+    <h4 class="navigation-link"><a href="registerPage.html">Registrovať sa</a></h4>
   </div>
 </nav>
 <div class="carousel-wrapper">
   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img class="carousel-image d-block" src="images/65-film.jpeg" alt="First slide">
+        <img class="carousel-image d-block" src="../images/65-film.jpeg" alt="First slide">
       </div>
       <div class="carousel-item">
-        <img class="carousel-image d-block" src="images/blue-beetle-film.jpeg" alt="Second slide">
+        <img class="carousel-image d-block" src="../images/blue-beetle-film.jpeg" alt="Second slide">
       </div>
       <div class="carousel-item">
-        <img class="carousel-image d-block" src="images/genv-serial.jpeg" alt="Third slide">
+        <img class="carousel-image d-block" src="../images/genv-serial.jpeg" alt="Third slide">
       </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -64,36 +69,36 @@
 </div>
 <div class="card-content">
   <div class="section-title">
-    <h4>Všetky seriály :</h4>
+    <h4>Všetky filmy :</h4>
     <div class="dropdown show">
-      <a class="btn btn-primary dropdown-toggle" href="" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Zoradiť podľa
-      </a>
+    <a class="btn btn-primary dropdown-toggle" href="" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Zoradiť podľa
+    </a>
 
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-        <a class="dropdown-item" href="">Hodnotenia</a>
-        <a class="dropdown-item" href="">Dĺžky</a>
-        <a class="dropdown-item" href="">Názvu</a>
-      </div>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+      <a class="dropdown-item" href="">Hodnotenia</a>
+      <a class="dropdown-item" href="">Dĺžky</a>
+      <a class="dropdown-item" href="">Názvu</a>
     </div>
   </div>
+  </div>
   <div class="list">
-    <a class="list-item pointer" href="https://www.imdb.com/title/tt4301160/" target="_blank">
-      <img class="item-image" src="images/drozd-serial.jpeg" alt="Drozd">
+    <a class="list-item pointer" href="itemDetail.html">
+      <img class="item-image" src="../images/65-film.jpeg" alt="65">
       <div class="item-footer">
-        <h5>1 sezóna ◦ 2023</h5>
+        <h5>1h 43min ◦ 2023</h5>
       </div>
     </a>
-    <a class="list-item pointer" href="https://www.imdb.com/title/tt11716756/" target="_blank">
-      <img class="item-image" src="images/zimny-kral-serial.jpeg" alt="Zimny">
+    <a class="list-item pointer" href="https://www.imdb.com/title/tt9224104/" target="_blank">
+      <img class="item-image" src="../images/meg-film.jpeg" alt="Meg">
       <div class="item-footer">
-        <h5>1 sezóna ◦ 2023</h5>
+        <h5>1h 56min ◦ 2023</h5>
       </div>
     </a>
-    <a class="list-item pointer" href="https://www.imdb.com/title/tt13159924/" target="_blank">
-      <img class="item-image" src="images/genv-serial.jpeg" alt="Genv">
+    <a class="list-item pointer" href="https://www.imdb.com/title/tt9362930/" target="_blank">
+      <img class="item-image" src="../images/blue-beetle-film.jpeg" alt="Blue beetle">
       <div class="item-footer">
-        <h5>1 sezóna ◦ 2023</h5>
+        <h5>2h 08min ◦ 2023</h5>
       </div>
     </a>
   </div>

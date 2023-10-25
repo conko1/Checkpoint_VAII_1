@@ -12,6 +12,12 @@ window.onload = function () {
     const parameter = menuImage.getAttribute("parameter");
     toggleSideBar(parameter, menuImage);
   })
+  const userImage = document.getElementById("user-image");
+
+  userImage.addEventListener("click", function() {
+    const parameter = userImage.getAttribute("parameter");
+    toggleSideBar(parameter, userImage);
+  })
 };
 
 function toggleSideBar(sideBarId, menuImage) {
@@ -19,10 +25,10 @@ function toggleSideBar(sideBarId, menuImage) {
   const computedStyle = window.getComputedStyle(sideBarElement);
   const currentDisplay = computedStyle.getPropertyValue("display");
   if (currentDisplay === "none") {
-    menuImage.src = "icons/close.svg"
+    menuImage.src = "/icons/close.svg"
     sideBarElement.style.display = "block";
   } else {
-    menuImage.src = "icons/menu.svg"
+    menuImage.src = sideBarId === "login-sidebar" ? "/icons/user.png" : "/icons/menu.svg";
     sideBarElement.style.display = "none";
   }
 }
