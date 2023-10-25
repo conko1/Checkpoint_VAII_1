@@ -1,0 +1,42 @@
+.detail-image {
+    width: 350px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.detail-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 15px 1rem;
+}
+
+.detail-property-value {
+    font-weight: bold;
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1rem;
+}
+
+.horizontal-divider {
+    display: none;
+}
+
+@media screen and (min-width: 1200px) {
+    .detail-image {
+        margin: 0;
+    }
+
+    .horizontal-divider {
+        display: block;
+    }
+
+    .detail-wrapper {
+        display: flex;
+        flex-direction: row;
+        gap: 5rem;
+    }
+}

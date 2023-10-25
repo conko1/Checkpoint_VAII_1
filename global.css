@@ -1,0 +1,247 @@
+body {
+    position: relative;
+    height: 100%;
+    overflow-x: hidden;
+    background-color: #EAEAEA !important;
+    padding-bottom: 50px;
+}
+
+.btn-primary {
+    color: #FFF !important;
+}
+
+a {
+    color: #000000 !important;
+    text-decoration: none !important;
+}
+
+a:hover {
+    color: #007bff !important;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+h4 {
+    margin: 0 !important;
+}
+
+nav {
+    background-color: #EAEAEA;
+    z-index: 99999;
+    position: sticky;
+    top: 0;
+}
+
+.horizontal-divider {
+    border-radius: 10px;
+    background-color: #a2a2a2;
+}
+
+.list {
+    margin: 0.75rem auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.page-title {
+    font-family: 'Shadows Into Light', cursive;
+}
+
+footer {
+    width: 100%;
+    display: flex !important;
+    bottom: 0;
+    position: fixed;
+    justify-content: space-around;
+    box-shadow: 0 0 20px 0 rgb(0 0 0 / 25%);
+    background-color: #dadada;
+    padding: 1rem 0.5rem;
+    border-top: 2px #b2b2b2 solid;
+    margin: auto 0;
+}
+
+.card-content {
+    box-shadow: 0 0 20px 0 rgb(0 0 0 / 10%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    height: auto;
+}
+
+.primary-color {
+    color: #007bff !important;
+}
+
+#menu-image, #menu-sidebar {
+    display: none;
+}
+
+.carousel-wrapper, .carousel-image {
+    width: 400px !important;
+    height: 600px;
+}
+
+.carousel-wrapper {
+    box-shadow: 0 0 40px 0 rgb(0 0 0 / 70%);
+    display: block;
+    margin: 0 auto;
+}
+
+.item-image {
+    width: 100%;
+}
+
+.item-footer {
+    background-color: #949494;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-buttons, .menu-buttons {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-buttons {
+    padding: 0.5rem 2rem;
+    border-bottom: 2px #b2b2b2 solid;
+}
+
+.page-title {
+    font-size: 3.5rem;
+}
+
+.menu-buttons {
+    gap: 20px;
+}
+
+.sidebar {
+    display: none;
+    padding: 1rem;
+    position: absolute;
+    width: 80vw;
+    background-color: #EAEAEA;
+    box-shadow: 0 0 20px 0 rgb(0 0 0 / 25%);
+}
+
+.item-image {
+    height: 350px;
+}
+
+.list-item {
+    border-radius: 10px;
+    overflow: hidden;
+    width: 250px;
+    box-shadow: 0 0 5px 0 rgb(0 0 0 / 75%);
+    transition: width linear .1s;
+}
+
+.list-item:hover {
+    width: 260px;
+    box-shadow: 0 0 20px 0 rgb(0 0 0 / 75%);
+}
+
+@media screen and (min-width: 1001px) {
+    .card-content {
+        margin: 30px 150px;
+    }
+    .list {
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width: 1000px) {
+    .card-content {
+        margin: 30px 40px;
+    }
+    .list {
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .card-content {
+        margin: 30px 0px;
+    }
+
+    #menu-image {
+        display: block;
+    }
+
+    .menu-buttons {
+        display: none;
+    }
+
+    .nav-buttons {
+        display: flex !important;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px #b2b2b2 solid;
+        box-shadow: 0 0 20px 0 rgb(0 0 0 / 25%);
+    }
+
+    .image {
+        margin: 0.5rem;
+        width: 35px;
+    }
+
+    .close-menu-btn {
+        margin-bottom: 1rem;
+        margin-left: auto;
+        display: block;
+    }
+
+    .page-title {
+        margin-right: 3.5rem;
+        font-size: 3.5rem;
+    }
+
+    .open-menu-btn {
+        margin-left: 1rem;
+    }
+
+    .sidebar {
+        display: none;
+        padding: 1rem;
+        position: absolute;
+        width: 80vw;
+        background-color: #EAEAEA;
+        box-shadow: 0 0 20px 0 rgb(0 0 0 / 25%);
+    }
+
+    .list {
+        overflow: auto;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .list-item {
+        border-radius: 10px;
+        overflow: hidden;
+        width: 70vw;
+        height: 100%;
+        box-shadow: 0 0 10px 0 rgb(0 0 0 / 25%);
+        transition: width linear .1s;
+    }
+
+    .list-item:hover {
+        width: 73vw;
+    }
+}
