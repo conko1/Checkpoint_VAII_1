@@ -24,6 +24,7 @@
     <title>Registrácia</title>
 </head>
 <body>
+
 <nav>
   <div class="nav-buttons">
     <img id="menu-image" src="../icons/menu.svg" class="image pointer open-menu-btn" alt="" parameter="menu-sidebar">
@@ -45,5 +46,17 @@
     <h4 class="navigation-link"><a href="registerPage.html">Registrovať sa</a></h4>
   </div>
 </nav>
+<div class="card-content">
+  <h4>Registrácia</h4>
+  <form class="detail-body" action="prehladPage.html">
+    <label for="login">Meno:</label>
+    <input required id="login" class="input" type="text" maxlength="32">
+    <label for="password1">Heslo:</label>
+    <input required id="password1" class="input" type="password" maxlength="32">
+    <label for="password2">Zopakujte heslo:</label>
+    <input required id="password2" class="input" type="password" maxlength="32">
+    <button type="submit" class="btn btn-primary">Registrovať</button>
+  </form>
+</div>
 </body>
 </html>
