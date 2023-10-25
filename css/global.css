@@ -101,6 +101,19 @@ footer {
     margin: 0 auto;
 }
 
+.btn {
+    width: 150px;
+}
+
+.input {
+    max-width: 250px;
+    height: 30px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    border: 0 solid;
+    box-shadow: 0 0 20px 0 rgb(0 0 0 / 10%);
+}
+
 .item-image {
     height: 350px;
     width: 100%;
@@ -115,7 +128,7 @@ footer {
 
 .nav-buttons, .menu-buttons {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: row;
     align-items: center;
 }
@@ -181,16 +194,21 @@ footer {
     }
 }
 
-@media screen and (min-width: 551px) and (max-width: 1000px) {
+@media screen and (min-width: 601px) and (max-width: 1000px) {
     .card-content {
         margin: 30px 40px;
     }
+
+    .sidebar {
+        width: 35vw;
+    }
+
     .list {
         justify-content: flex-start;
     }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 600px) {
     .card-content {
         margin: 30px 0;
     }
